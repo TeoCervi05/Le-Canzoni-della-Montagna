@@ -1,0 +1,65 @@
+\documentclass[twoside]{article}
+
+\usepackage{geometry}
+\geometry{
+    a5paper,
+    top=1cm, bottom=2cm, left=20mm, right=20mm,
+    includehead,
+    nomarginpar,
+    textwidth=10cm,
+    headheight=10mm,
+}
+\usepackage{fancyhdr}
+\usepackage{expl3}
+\usepackage{leadsheets}
+\setleadsheets{align-chords={l}}
+\definesongtitletemplate{empty}{}
+\setleadsheets{disable-measuring = true}
+
+\ExplSyntaxOn
+    \UseName{prop_new:c}{l__leadsheets_songs_height_prop}
+\ExplSyntaxOff
+
+\begin{document}
+
+    \pagestyle{fancy}
+
+    \fancyhead[CE]{SEZIONE}
+    \fancyhead[CO]{TITOLO}
+    \fancyfoot[C]{\thepage}
+
+    \begin{titlepage}
+        \thispagestyle{empty}
+        \centering
+        \vspace*{\fill}
+        {\Huge \textbf{Titolo}}\\[1cm]
+        {\Large Autore}
+        \vspace*{\fill}
+    \end{titlepage}
+
+    \newpage
+
+    \begin{song}[title-template=empty]{title=title}
+        \begin{verse}
+            ^{DO} ^{REmi} ^{MImi7} ^{\underline{ripetizioni}}
+        \end{verse}
+        \begin{verse}
+            ^{DO} Lorem ipsum ^{REmi}dolor sit amet, ^{MImi7}consetetur sadipscing elitr, \\
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
+            magna aliquyam erat, sed diam voluptua.
+        \end{verse}
+        \begin{verse}[after-label=Rit:]
+            ^{DO} \textit{Lorem ipsum} ^{REmi}\textit{dolor sit amet,} ^{MImi7}\textit{consetetur sadipscing elitr,} \\
+            \textit{sed diam nonumy eirmod tempor invidunt ut labore et dolore} \\
+            \textit{magna aliquyam erat, sed diam voluptua.}
+        \end{verse}
+        \begin{verse}
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \\
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
+            magna aliquyam erat, sed diam voluptua.
+        \end{verse}
+        \begin{verse}[after-label=Rit.]
+        \end{verse}
+    \end{song}
+
+\end{document}

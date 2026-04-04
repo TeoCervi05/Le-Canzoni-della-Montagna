@@ -1,0 +1,93 @@
+\documentclass[twoside]{article}
+
+\usepackage{geometry}
+\geometry{
+    a5paper,
+    top=1cm, bottom=2cm, left=20mm, right=20mm,
+    includehead,
+    nomarginpar,
+    textwidth=10cm,
+    headheight=10mm,
+}
+\usepackage{fancyhdr}
+\usepackage{expl3}
+\usepackage{leadsheets}
+\setleadsheets{align-chords={l}}
+\definesongtitletemplate{empty}{}
+\setleadsheets{disable-measuring = true}
+
+\ExplSyntaxOn
+    \UseName{prop_new:c}{l__leadsheets_songs_height_prop}
+\ExplSyntaxOff
+
+\begin{document}
+
+    \pagestyle{fancy}
+
+    \fancyhead[CE]{MUSICA ITALIANA}
+    \fancyhead[CO]{MARMELLATA \#25}
+    \fancyfoot[C]{\thepage}
+
+    \begin{titlepage}
+        \thispagestyle{empty}
+        \centering
+        \vspace*{\fill}
+        {\Huge \textbf{Marmellata \#25}}\\[1cm]
+        {\Large Cesare Cremonini}
+        \vspace*{\fill}
+    \end{titlepage}
+
+    \newpage
+
+    \begin{song}[title-template=empty]{title=Marmellata \#25}
+        \begin{verse}
+            ^{RE} ^{LA} ^{SOL} ^{\underline{x8}}
+        \end{verse}
+        \begin{verse}
+            ^{RE} Ci sono le tue scarpe ancora ^{SOL}qua, ma tu te ne sei già andata \\
+            ^{RE} C'è ancora la tua parte di soldi in ^{SOL}banca, ma tu non ci sei più \\
+            ^{RE} C'è ancora la tua patente ^{SOL}rosa tutta stropicciata \\
+            ^{RE} E nel tuo cassetto un libro ^{SOL}letto e una Winston ^{SOL7+}blu, ^{LA6} l'ho fumata
+        \end{verse}
+        \begin{verse}
+            Ci sono le tue calze rotte la notte in cui ti sei ubriacata \\
+            C'è ancora lì sul pianoforte una sciarpa blu \\
+            Ci sono le tue carte e il tuo profumo è ancora in questa casa \\
+            Proprio lì dove ti ho immaginata c'eri tu
+        \end{verse}
+        \begin{verse}
+            ^{RE} ^{RE7+}
+        \end{verse}
+        \begin{verse}[after-label=Rit:]
+            ^{SOL}\textit{Ah, da quando} ^{FA#mi}\textit{Senna non corre} ^{RE}\textit{più} ^{RE7+} \\
+            ^{SOL}\textit{Ah, da quando} ^{FA#mi}\textit{Baggio non gioca} ^{RE}\textit{più} ^{RE7+} \\
+            \textit{Oh,} ^{MImi7}\textit{no, no, da quando mi hai lasciato} ^{FA#mi}\textit{pure} ^{SOL}\textit{tu} \\
+            \textit{Non è più Do}^{RE}\textit{menica,} ^{LA} ^{SOL} ^{RE} ^{LA} ^{SOL} \\
+            \textit{ma poi si di}^{RE}\textit{mentica} ^{LA} ^{SOL} \\
+            ^{RE}\textit{Non si} ^{LA}\textit{pensa,} ^{SOL}\textit{non si pensa più}
+        \end{verse}
+        \begin{verse}
+            Ci sono le tue scarpe ancora qua, ma tu non sei passata \\
+            Ho spiegato ai vicini ridendo che tu non ci sei più \\
+            Un ragazzo in cortile abbraccia e bacia la sua fidanzata \\
+            Proprio lì dove ti ho incontrata non ci sei più
+        \end{verse}
+        \begin{verse}[after-label=Rit:]
+            ^{SOL}\textit{Ah, da quando} ^{FA#mi}\textit{Senna non corre} ^{RE}\textit{più} ^{RE7+} \\
+            ^{SOL}\textit{Ah, da quando} ^{FA#mi}\textit{Baggio non gioca} ^{RE}\textit{più} ^{RE7+} \\
+            \textit{Oh,} ^{MImi7}\textit{no, no, da quando mi hai lasciato} ^{FA#mi}\textit{pure} ^{SOL}\textit{tu} \\
+            \textit{Non è più Do}^{RE}\textit{menica,} ^{LA} ^{SOL}  ^{RE} ^{LA} ^{SOL} \\
+            \textit{ma poi si di}^{RE}\textit{mentica} ^{LA} ^{SOL}  ^{RE} ^{LA} ^{SOL} \\
+        \end{verse}
+        \begin{verse}
+            ^{RE} Ora vivo da solo in questa ^{SOL}casa buia e desolata \\
+            ^{RE}Il tempo che davo all'amore lo ^{SOL}tengo solo per me \\
+            ^{RE}Ogni volta in cui ti penso ^{SOL}mangio chili di marmellata ^{RE} \\
+            Quella che mi nascondevi ^{SOL} tu ^{LA} l'ho trova^{RE}ta
+        \end{verse}
+        \begin{verse}
+            ^{RE} ^{LA} ^{SOL}  ^{\underline{x4}}
+        \end{verse}
+    \end{song}
+
+\end{document}
