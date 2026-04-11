@@ -1,64 +1,104 @@
 \documentclass[twoside]{article}
-
-\usepackage{geometry}
-\geometry{
-    a5paper,
-    top=1cm, bottom=2cm, left=20mm, right=20mm,
-    includehead,
-    nomarginpar,
-    textwidth=10cm,
-    headheight=10mm,
-}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
 \usepackage{fancyhdr}
-\usepackage{expl3}
-\usepackage{leadsheets}
-\setleadsheets{align-chords={l}}
-\definesongtitletemplate{empty}{}
-\setleadsheets{disable-measuring = true}
+\usepackage[chorded]{songs}
 
-\ExplSyntaxOn
-    \UseName{prop_new:c}{l__leadsheets_songs_height_prop}
-\ExplSyntaxOff
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{SEZIONE} % section
+\fancyhead[CO]{TITOLO} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
 
 \begin{document}
 
-    \pagestyle{fancy}
+% ======================
+% TTITLE
+% ======================
 
-    \fancyhead[CE]{SEZIONE}
-    \fancyhead[CO]{TITOLO}
+\thispagestyle{empty}
 
-    \begin{titlepage}
-        \thispagestyle{empty}
-        \centering
-        \vspace*{\fill}
-        {\Huge \textbf{Titolo}}\\[1cm]
-        {\Large Autore}
-        \vspace*{\fill}
-    \end{titlepage}
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Titolo}}\\[1cm] % title
+    {\Large Autore} % autor
+\end{center}
+\vspace*{\fill}
 
-    \newpage
+\newpage
 
-    \begin{song}[title-template=empty]{title=title}
-        \begin{verse}
-            ^{DO} ^{REmi} ^{MImi7} ^{\underline{ripetizioni}}
-        \end{verse}
-        \begin{verse}
-            ^{DO} Lorem ipsum ^{REmi}dolor sit amet, ^{MImi7}consetetur sadipscing elitr, \\
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
-            magna aliquyam erat, sed diam voluptua.
-        \end{verse}
-        \begin{verse}[after-label=Rit:]
-            ^{DO} \textit{Lorem ipsum} ^{REmi}\textit{dolor sit amet,} ^{MImi7}\textit{consetetur sadipscing elitr,} \\
-            \textit{sed diam nonumy eirmod tempor invidunt ut labore et dolore} \\
-            \textit{magna aliquyam erat, sed diam voluptua.}
-        \end{verse}
-        \begin{verse}
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \\
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
-            magna aliquyam erat, sed diam voluptua.
-        \end{verse}
-        \begin{verse}[after-label=Rit.]
-        \end{verse}
-    \end{song}
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Titolo}[by=\normalsize{Auore}]
+
+\beginverse
+    {\nolyrics \[SOL] \[RE] \[MIm] \[SIm] x2}
+\endverse
+
+\beginverse
+    \[SOL]Lorem ipsum \[RE]dolor sit amet, \[MIm]consetetur \[SIm]sadipscing elitr, \\
+    \[SOL]sed diam \[RE]nonumy eirmod \[Mim]tempor invidunt ut \[SIm]labore et dolore \\
+    \[SOL]magna aliquyam erat, \[Mim]sed diam voluptua.
+\endverse
+
+\beginchorus
+    \[SOL]Lorem ipsum \[RE]dolor sit amet, \[MIm]consetetur \[SIm]sadipscing elitr, \\
+    \[SOL]sed diam \[RE]nonumy eirmod \[Mim]tempor invidunt ut \[SIm]labore et dolore \\
+    \[SOL]magna aliquyam erat, \[Mim]sed diam voluptua.
+\endchorus
+
+\beginverse
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \\
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
+    magna aliquyam erat, sed diam voluptua.
+\endverse
+
+\beginchorus
+\endchorus
+
+\beginverse
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \\
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
+    magna aliquyam erat, sed diam voluptua.
+\endverse
+
+\beginverse
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \\
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
+    magna aliquyam erat, sed diam voluptua.
+\endverse
+
+\beginverse
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \\
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore \\
+    magna aliquyam erat, sed diam voluptua.
+\endverse
+
+\endsong
+\end{songs}
 
 \end{document}

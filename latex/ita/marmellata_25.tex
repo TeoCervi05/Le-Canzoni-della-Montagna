@@ -1,0 +1,119 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[chorded]{songs}
+
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{MUSICA ITALIANA} % section
+\fancyhead[CO]{MARMELLATA \#25} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
+
+\begin{document}
+
+% ======================
+% TTITLE
+% ======================
+
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Marmellata \#25}}\\[1cm] % title
+    {\Large Cesare Cremonini} % autor
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Marmellata \#25}[by=\normalsize{Cesare Cremonini}]
+
+\beginverse
+    {\nolyrics \[RE] \[LA] \[SOL] \hspace{0.5cm} x4}
+\endverse
+
+\beginverse
+    \[RE] Ci sono le tue scarpe ancora \[SOL]qua, ma tu te ne sei già andata \\
+    \[RE] C'è ancora la tua parte di soldi in \[SOL]banca, ma tu non ci sei più \\
+    \[RE] C'è ancora la tua patente \[SOL]rosa tutta stropicciata \\
+    \[RE] E nel tuo cassetto un libro \[SOL]letto e una Winston \[SOL7+]blu \[LA6] \\
+    l'ho fumata
+\endverse
+
+\beginverse
+    \[RE] Ci sono le tue calze rotte la \[SOL]notte in cui ti sei ubriacata \\
+    \[RE] C'è ancora lì sul pianoforte una \[SOL]sciarpa blu \\
+    \[RE] Ci sono le tue carte e il tuo pro\[SOL]fumo è ancora in questa casa \\
+    \[RE]Proprio lì \[SOL]dove ti ho immaginata \[SOL7+] \[LA6] \\
+    C'eri tu \[RE] \[RE7+]
+\endverse
+
+\beginchorus
+    \[SOL]Ah, da quando \[FA#m]Senna non corre \[RE]più \[RE7+] \\
+    \[SOL]Ah, da quando \[FA#m]Baggio non gioca \[RE]più \[RE7+] \\
+    Oh, \[MIm7]no, no, da quando mi hai lasciato \[FA#m]pure \[SOL]tu \\
+    Non è più Do\[RE]menica \[LA] \[SOL] \hspace{0.5cm} \[RE] \[LA] \[SOL]\\
+    Ma poi si di\[RE]mentica \[LA] \[SOL] \\
+    \[RE]Non si \[LA]pensa, \[SOL]non si pensa più
+\endchorus
+
+\newpage
+
+\beginverse
+    Ci sono le tue scarpe ancora qua, ma tu non sei passata \\
+    Ho spiegato ai vicini ridendo che tu non ci sei più \\
+    Un ragazzo in cortile abbraccia e bacia la sua fidanzata \\
+    Proprio lì dove ti ho incontrata \\
+    Non ci sei più
+\endverse
+
+\beginchorus
+    \[SOL]Ah, da quando \[FA#m]Senna non corre \[RE]più \[RE7+] \\
+    \[SOL]Ah, da quando \[FA#m]Baggio non gioca \[RE]più \[RE7+] \\
+    Oh, \[MIm7]no, no, da quando mi hai lasciato \[FA#m]pure \[SOL]tu \\
+    Non è più Do\[RE]menica \[LA] \[SOL] \hspace{0.5cm} \[RE] \[LA] \[SOL]\\
+    E non si di\[RE]mentica \[LA] \[SOL] \hspace{0.5cm} \[RE] \[LA] \[SOL]
+\endchorus
+
+\beginverse
+    \[RE] Ora vivo da solo in questa \[SOL]casa buia e desolata \\
+    \[RE] Il tempo che davo all'amore lo \[SOL]tengo solo per me \\
+    \[RE] Ogni volta in cui ti penso \[SOL]mangio chili di marmellata \[RE] \\
+    Quella che mi nascondevi \[SOL] tu \[LA] l'ho trova\[RE]ta
+\endverse
+
+\beginverse
+    {\nolyrics \[RE] \[LA] \[SOL] \hspace{0.5cm} x4}
+\endverse
+
+\endsong
+\end{songs}
+
+\end{document}

@@ -1,0 +1,115 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[chorded]{songs}
+
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{MUSICA INTERNAZIONALE} % section
+\fancyhead[CO]{FIX YOU} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+%\renewcommand{\chorusfont}{\it}
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
+
+\begin{document}
+
+% ======================
+% TTITLE
+% ======================
+
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Fix You}}\\[1cm] % title
+    {\Large Coldplay} % autor
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Fix You}[by=\normalsize{Coldplay}]
+
+\beginverse
+    {\nolyrics \[MIb] \[SOLm/RE] \[DOm] \[SIb4] x2}
+\endverse
+
+\beginverse
+    When you \[MIb]try your best, but you \[SOLm/RE]don't succe\[DOm]ed \[SIb4] \\
+    When you \[MIb]get what you want, but \[SOLm/RE]not what you ne\[DOm]ed \[SIb4] \\
+    When you \[MIb]feel so tired, but \[SOLm/RE]you can't sle\[DOm]ep \[SIb4] \\
+    Stuck in re\[MIb]verse \[SOLm/RE] \[DOm] \[SIb4]
+\endverse
+
+\beginverse
+   And the tears come streamin' down your face \\
+    When you lose somethin' you can't replace \\
+    When you love someone, but it goes to waste \\
+    Could it be worse?
+\endverse
+
+\beginchorus
+    \[LAb] Lights will \[SIb]guide you home \\
+    \[LAb] And ign\[SIb]ite your bones \\
+    \[LAb] And I will \[SIb]try to fix you
+\endchorus
+
+\beginverse
+    And high up above or down below \\
+    When you're too in love to let it go \\
+    But if you never try, you'll never know \\
+    Just what you're worth
+\endverse
+
+\beginchorus
+\endchorus
+
+\beginverse
+    {\nolyrics \[MIb] \hspace{0.5cm} \[LAb7+] \hspace{0.5cm} \[MIb] \hspace{0.5cm} \[SIb4] \[SIb] x4}
+\endverse
+
+\beginverse
+    \[MIb] Tears stream \[LAb7+] down your face \\
+    \[MIb] When you lose somethin' \[SIb4]you cannot \[SIb]replace \\
+    \[MIb] Tears stream \[LAb7+] down your face, and \[MIb]I \[SIb4] \[SIb] \\
+    \[MIb] Tears stream \[LAb7+] down your face \\
+    \[MIb] I promise you I will \[SIb4]learn from my \[SIb]mistakes \\
+    \[MIb] Tears stream \[LAb7+] down your face, and \[MIb]I \[SIb4] \[SIb]
+\endverse
+
+\beginchorus
+    \[LAb] Lights will \[SIb]guide you home \\
+    \[LAb] And ign\[SIb]ite your bones \\
+    \[LAb] And I will \[SIb]try to fix you \[MIb]
+\endchorus
+
+\endsong
+\end{songs}
+
+\end{document}
