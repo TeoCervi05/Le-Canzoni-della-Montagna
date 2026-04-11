@@ -1,0 +1,142 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[chorded]{songs}
+
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{MUSICA ITALIANA} % section
+\fancyhead[CO]{SABATO} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+%\renewcommand{\chorusfont}{\it}
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
+
+\begin{document}
+
+% ======================
+% TTITLE
+% ======================
+
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Sabato}}\\[1cm] % title
+    {\Large Jovanotti} % autor
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Sabato}[by=\normalsize{Jovanotti}]
+
+\beginverse
+    {\nolyrics \[LAm] \[MIm] \[REm] \hspace{0.5cm} x2}
+\endverse
+
+\beginverse
+    \[LAm] E adesso a letto, bam\[MIm]bini, spegnete la TV \\
+    \[REm] Troviamo un posto dove stare solo io, solo tu \\
+    \[LAm] Sincronizziamo i cuori \[MIm]sullo stesso BPM \\
+    \[REm] Silenzia il cellulare che non ti serve a niente \\
+    \[LAm] A meno che non voglia \[MIm]fare una fotografia \\
+    \[REm] Di noi che ci abbracciamo forte e decolliamo via
+\endverse
+
+\beginverse
+    \textnote{Pre-rit}
+    \[LAm] A bordo di un'astrona\[MIm]ve senza pilota \\
+    \[REm] Che punta verso galassie a cercare vita \\
+    \[LAm] Come nei sabati se\[MIm]ra in provincia \\
+    \[REm] Che sembra tutto finito, poi ricomincia
+\endverse
+
+\beginverse
+    {\nolyrics \[LAm] \[MIm] \[REm]}
+\endverse
+
+\beginchorus
+    \[LAm]Sabato, sabato, \[MIm] è sempre sabato \\
+    \[REm] Anche di lunedì sera, è sempre sabato sera \\
+    \[Lam] Quando non si lavora, \[MIm] è sempre sabato \\
+    \[REm] Vorrei che ritornasse presto un altro lunedì
+\endchorus
+
+\newpage
+
+\beginverse
+    Strappa le stelle dal cielo e lascia solo i led \\
+    Voglio ballare come Michael nel video di Bad \\
+    Stare leggeri come due farfalle appena \\
+    Venute fuori dal bozzolo sulla scena \\
+    Sembrano tutti più contenti di noi \\
+    Ma per un giorno, lo sai, possiamo essere eroi
+\endverse
+
+\beginverse
+    \textnote{Pre-rit}
+\endverse
+
+\beginchorus
+\endchorus
+
+\beginverse
+    \[LAm] Dillo a tua madre di an\[MIm]darsene a letto tranquilla
+    \[REm] Tu sei la bionda stasera, sono il gorilla
+    \[LAm] Ti porto a vedere il ma\[MIm]re da in cima al grattacielo
+    \[REm] Mentre i cecchini ci sparano, noi prendiamo il volo
+\endverse
+
+\beginverse
+    \textnote{Pre-rit}
+    \[LAm] A bordo di un'astrona\[MIm]ve senza pilota \\
+    \[REm] Che punta verso galassie a cercare vita \\
+    \[LAm] Come nei sabati se\[MIm]ra in provincia \\
+    \[REm] Che sembra tutto finito, poi ricomincia
+    \[LAm] Come in un sabato se\[MIm]ra italiano \\
+    \[REm] Che sembra tutto perduto, poi ci rialziamo
+\endverse
+
+\newpage
+
+\beginchorus
+    \[LAm]Sabato, sabato, \[MIm] è sempre sabato \\
+    \[REm] Anche di lunedì sera, è sempre sabato sera \\
+    \[Lam] Quando non si lavora, \[MIm] è sempre sabato \\
+    \[REm] Vorrei che ritornasse presto un altro lunedì \\
+    \[LAm] \[MIm] \[REm] \hspace{0.5cm} Ma è troppo sabato qui \\
+    \[LAm] \[MIm] \[REm] \hspace{0.5cm} Un altro lunedì \\
+    \[LAm] \[MIm] \[REm] \hspace{0.5cm} Ma è troppo sabato qui \\
+    {\nolyrics \[LAm] \[MIm] \[REm]}
+\endchorus
+
+\endsong
+\end{songs}
+
+\end{document}
