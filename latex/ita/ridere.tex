@@ -1,0 +1,134 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[chorded]{songs}
+
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{MUSICA ITALIANA} % section
+\fancyhead[CO]{RIDERE} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+%\renewcommand{\chorusfont}{\it}
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
+
+\begin{document}
+
+% ======================
+% TTITLE
+% ======================
+
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Ridere}}\\[1cm] % title
+    {\Large Pinguini Tattici Nucleari} % autor
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Ridere}[by=\normalsize{Pinguini Tattici Nucleari}]
+
+\beginverse
+    {\nolyrics \[LA4] \hspace{0.5cm} \[LA]}
+    {\nolyrics \[REadd9] \[LA] \[FA#m7] \[MI]}
+\endverse
+
+\beginverse
+    \[REadd9] Ed un po' mi fa \[LA]ridere \\
+    Se \[FA#m]penso che ora c’è lì un altro \[MI]che ti uccide i ragni al posto \[REadd9]mio \\
+    Ma ci dovrò con\[LA]vivere \\
+    \[FA#m]Maledetto cuore che ti \[MI/SOL#]sciogli ogni volta che dico ad\[REadd9]dio \\
+    Mia mamma e la tua \[LA]fanno ancora zumba in\[FA#m]sieme \\
+    E a volte forse \[MI]parlano un po' male di \[REadd9]noi \\
+    Sai già come fi\[LA]nisce: che poi io mi emo\[FA#m]ziono \\
+    E invece tu ti an\[MI]noi
+\endverse
+
+\beginchorus
+    \[LA] Però tu fammi una promessa \\
+    \[MI] Che un giorno quando sarai persa \\
+    \[FA#m7] Ripenserai ogni tanto a cosa siamo stati \[REadd9]noi \\
+    \[LA] Alle giornate al mare, a tutte le mie pare \\
+    \[MI] Alle cucine che non abbiam potuto comprare \\
+    \[FA#m] Alle mie guerre perse, alle tue paci finte \\
+    \[REadd9] A tutte le carezze che forse erano spinte \[MI] \\
+    Giuro che un po' mi fa ridere
+\endchorus
+
+\newpage
+
+\beginverse
+    E ti cantavo "Fix You" \\
+    Per farti dormire quando il mondo ti teneva sveglia \\
+    Ed ora sono solo un tizio \\
+    Che se lo incontri per la strada gli fai un cenno di saluto e via \\
+    E non ho voglia di cambiarmi, uscire a socializzare \\
+    Per stasera voglio essere una nave in fondo al mare \\
+    Sei stata come Tiger, non mi mancava niente \\
+    E poi dentro m’hai distrutto
+\endverse
+
+\beginverse
+    Perché mi sono accorto che mi mancava tutto
+\endverse
+
+\beginchorus
+    Però tu fammi una promessa \\
+    Che un giorno quando sarai persa \\
+    Ripenserai ogni tanto a cosa siamo stati noi \\
+    Alle giornate al mare, a tutte le mie pare \\
+    Alle cucine che non abbiam potuto comprare \\
+    Lo shampoo all'albicocca, i tuoi capelli in bocca \\
+    Alla tua testa dura, all'ansia, alla paura \\
+    Giuro che un po' mi fa ridere
+\endchorus
+
+\newpage
+
+\beginverse
+    \[LA] Però tu fammi una promessa \\
+    \[DO#m7] Che un giorno quando sarai vecchia \\
+    \[FA#m7] Racconterai a qualcuno \[RE#m7]cosa siamo stati \[REadd9]noi \\
+    {\nolyrics \[FA#m7] \[MI]}
+\endverse
+
+\beginverse
+    \[LA] Le cene da tua mamma, la nostra prima canna \\
+    \[MI] La carbonara a Londra quando ci han messo la panna \\
+    \[FA#m7]I tuoi occhi, i tuoi nei che non sono più i miei \\
+    \[REadd9] Ma alla fine ti giuro \[MI]che lo rifare\[REadd9]i  \[LA] \[FA#m7] \\
+    \[MI]Che lo rifare\[REadd9]i  \[LA] \[FA#m7] \[MI]
+\endverse
+
+\endsong
+\end{songs}
+
+\end{document}
