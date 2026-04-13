@@ -1,0 +1,87 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[chorded]{songs}
+
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{CANTI LITURGICI} % section
+\fancyhead[CO]{SANTO} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
+
+\begin{document}
+
+% ======================
+% TTITLE
+% ======================
+
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Santo}}\\[1cm] % title
+    {\Large Gen Rosso Verde} % autor
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Santo}[by=\normalsize{Gen Rosso Verde}]
+
+\beginchorus
+    \[LA]San\[MI]to, \[DO#m]San\[SI]to \\
+    \[FA#m]Santo il Si\[MI]gnore, \[LA]Dio dell'uni\[SI]verso \\
+    \[LA]San\[MI]to, \[DO#m]San\[SI]to \\
+    I \[FA#m]cieli e la \[MI]terra sono \[LA]pieni della tua \[FA#m]glo\[MI]ria
+\endchorus
+
+\beginverse
+    O\[LA]sanna nell'\[SI]alto dei \[LA]cie\[SI]li \\
+    O\[FA#m]sanna nell'\[FA#m7]alto dei \[LA]cie\[SI]li
+\endverse
+
+\beginchorus
+\endchorus
+
+\beginverse
+    \[SI] Benedetto co\[LA]lui che viene \\
+    Nel \[MI]nome del si\[SI]gnore \\
+    O\[LA]sanna nell'\[SI]alto dei \[LA]cie\[SI]li \\
+    O\[FA#m]sanna nell'\[FA#m7]alto dei \[LA]cie\[SI]li
+\endverse
+
+\beginchorus
+    \[LA]San\[MI]to, \[DO#m]San\[SI]to, \[LA]Sa\[SI]an\[MI]to
+\endchorus
+
+\endsong
+\end{songs}
+
+\end{document}
