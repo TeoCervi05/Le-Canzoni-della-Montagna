@@ -1,0 +1,106 @@
+\documentclass[twoside]{article}
+\usepackage[a5paper,top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[chorded]{songs}
+
+% ======================
+% HEADER / FOOTER
+% ======================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[CE]{MUSICA INTERNAZIONALE} % section
+\fancyhead[CO]{IMAGINE} % title
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyfoot{}
+
+% ======================
+% SONG SETTINGS
+% ======================
+
+\renewcommand{\printchord}[1]{\textbf{#1}}
+\renewcommand{\everychorus}{\textnote{Rit}}
+\renewcommand{\stitlefont}{
+  \LARGE\baselineskip=20pt\lineskiplimit=0pt
+}
+\setlength{\sbarheight}{0pt}
+\songcolumns{1}
+\noversenumbers
+\nosongnumbers
+
+\begin{document}
+
+% ======================
+% TTITLE
+% ======================
+
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+    {\Huge \textbf{Imagine}}\\[1cm] % title
+    {\Large John Lennon} % autor
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+% ======================
+% SONG
+% ======================
+
+\begin{songs}{}
+\beginsong{Imagine}[by=\normalsize{John Lennon}]
+
+\beginverse
+    {\nolyrics \[DO] \hspace{0.50cm} \[DO7+] \[FA] \hspace{0.50cm} x2}
+\endverse
+
+\beginverse
+    \[DO] Imagine there's \[DO7+]no \[FA]heaven \\
+    \[DO] It's easy if \[DO7+]you \[FA]try \\
+    \[DO] No hell \[DO7+]be\[FA]low us \\
+    \[DO] Above us on\[DO7+]ly \[FA]sky \\
+    Imagine \[LAm/MI]all the \[REm7]people \[FA/DO] \\
+    \[SOL]Living for \[DO/SOL]to\[SOL7]day
+\endverse
+
+\beginverse
+    Imagine there's no countries \\
+    It isn't hard to do \\
+    Nothing to kill or die for \\
+    And no religion too \\
+    Imagine all the people \\
+    Living life in peace
+\endverse
+
+\beginchorus
+    \[FA] You may \[SOL]say I'm a \[DO]dreamer \[DO7+] \[MI] \[MI7] \\
+    \[FA] But I'm \[SOL]not the only \[DO]one \[DO7+] \[MI] \[MI7] \\
+    \[FA] I hope some\[SOL]day you'll \[DO]join us \[DO7+] \[MI] \[MI7] \\
+    \[FA] And the \[SOL]world will \[DO]be as one
+\endchorus
+
+\beginverse
+    {\nolyrics \[DO/RE] \[DO/LA] \[DO/SI]}
+\endverse
+
+\beginverse
+    Imagine no possessions \\
+    I wonder if you can \\
+    No need for greed or hunger \\
+    A brotherhood of man \\
+    Imagine all the people \\
+    Sharing all the world
+\endverse
+
+\beginchorus
+\endchorus
+
+\endsong
+\end{songs}
+
+\end{document}
